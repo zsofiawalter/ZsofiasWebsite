@@ -1,32 +1,16 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 .App { 
-  font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+  font-family: "Andale Mono", monospace;
+  color: #014421;
 } 
 
-header .container{
+header .navbar{
   max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 header a {
-  color: black;
+  color: #014421;
   text-decoration: none;
 }
 
@@ -34,4 +18,45 @@ header a {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+}
+
+.navbar-title {
+  display: inline;
+  padding-left: 8px;
+}
+
+.navbar-item {
+  padding: 0px 4px 0px 4px;
+}
+
+.navbar-item:hover {
+  color: white;
+  background-color: #014421;
+}
+
+.navbar {
+  position: fixed;
+  top: 16px;
+  width: 100%;
+}
+
+.left {
+  position: fixed;
+  left: 32px;
+}
+
+.right {
+  position: fixed;
+  right: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.right p {
+  margin: 0;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 300px;
 }
