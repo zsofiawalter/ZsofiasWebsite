@@ -1,0 +1,5 @@
+node_modules/
+./server/.env
+dist/
+./server/docker-compose.yml
+./log.md
