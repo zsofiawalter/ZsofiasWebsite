@@ -16,7 +16,7 @@ app.use((req: Request, res: Response, next) => {
 });
 
 // routes
-app.use('/api/locations', locationRoutes);
+app.use('/locations', locationRoutes);
 
 // listen for requests
 app.listen(port, () => {

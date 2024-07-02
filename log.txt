@@ -19,4 +19,5 @@ Connect to postgres in docker
     docker exec -it mydb psql -U zsofia
     \du     Check list of users
 
-Check user list
+https://www.commandprompt.com/education/how-to-fix-relation-does-not-exist-error-in-postgres/
+Fix relation does not exist with 
