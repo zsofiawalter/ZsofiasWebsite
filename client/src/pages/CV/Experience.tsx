@@ -2,7 +2,7 @@ import List from "../../components/List";
 import { IExperience } from "./IExperience";
 
 /**
- *
+ * Returns experience component
  * @param experience of type IExperience containing data for one experience
  * @returns div block with experience information structured
  */
@@ -26,7 +26,7 @@ function Experience({ experience }: { experience: IExperience }) {
             <p className="interval">{start + "-" + end}</p>
             <p className="location">{location}</p>
             <List content={description} />
-            <List content={skills} />
+            <List content={skills} header="Skills:" />
         </div>
     );
 }
