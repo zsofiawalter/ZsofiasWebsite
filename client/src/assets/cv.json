@@ -73,6 +73,7 @@
             "name": "Thrifty Carrot",
             "title": "Project Lead",
             "interval": ["2022-06-01", "2022-12-01"],
+            "location": "Durham, NC",
             "description": [
                 "Web platform to facilitate user grocery budgeting via two methods: planning shopping lists using scraped grocery data and analyzing previous expenditures.",
                 "Conducted user research via interviews and surveys, developed user persona, and created website mockup using user journeys and wireframes. ",
@@ -92,8 +93,7 @@
             "type": "project",
             "name": "DigiDJ",
             "title": "Project Lead",
-            "start": "Nov 2022",
-            "end": "Dec 2022",
+            "interval": ["2022-11-01", "2022-12-20"],
             "location": "Durham, NC",
             "description": [
                 "Hand-held device that allows the user to modulate speed and pitch of music, set loops, and play sound effects through combinations of tilting and touch pad inputs. ",

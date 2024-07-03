@@ -3,7 +3,8 @@ export interface IExperience {
     Name: string;
     Team?: string;
     Title: string;
-    Interval: Date[];
+    Start: string;
+    End: string;
     Location: string;
     Description: string[];
     Skills: string[];
