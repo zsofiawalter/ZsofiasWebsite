@@ -22,7 +22,7 @@
     "experiences": [
         {
             "type": "work",
-            "company": "PowerUs",
+            "name": "PowerUs",
             "team": "Job Matching",
             "title": "Product Management Intern",
             "interval": ["2023-09-01", "2024-02-29"],
@@ -43,7 +43,7 @@
         },
         {
             "type": "work",
-            "company": "Microsoft",
+            "name": "Microsoft",
             "team": "Word Online",
             "title": "Software Engineering Intern",
             "interval": ["2022-05-01", "2022-07-01"],
@@ -57,7 +57,7 @@
         },
         {
             "type": "work",
-            "company": "Microsoft",
+            "name": "Microsoft",
             "team": "Bing Index Spam Detection",
             "title": "Explore (SWE & PM) Intern",
             "interval": ["2021-05-01", "2021-07-01"],
@@ -111,21 +111,7 @@
             "type": "leadership",
             "name": "Duke Varsity Fencing Team",
             "title": "Women's Team Captain",
-            "start": "May 2022",
-            "end": "May 2023",
-            "location": "Durham, NC",
-            "description": [
-                "Lead 20 women through 8 months of training, practiced 17 hours per week culminating in 8 collegiate meets, while implementing a new training regimen.",
-                "Organized donation campaign to raise $72,979 for breast cancer research.",
-                "Results: 2023 NCAA Championship Qualifier, Women's Team 2021 ACC Champions, 7th Place Division 1 2022 North American Cup"
-            ],
-            "skills": ["Leadership", "Communication", "Teamwork", "Mentorship"]
-        },
-        {
-            "name": "Duke Varsity Fencing Team",
-            "title": "Women's Team Captain",
-            "start": "May 2022",
-            "end": "May 2023",
+            "interval": ["2022-05-01", "2023-05-01"],
             "location": "Durham, NC",
             "description": [
                 "Lead 20 women through 8 months of training, practiced 17 hours per week culminating in 8 collegiate meets, while implementing a new training regimen.",
@@ -138,8 +124,7 @@
             "type": "Leadership",
             "name": "Scale &amp; Coin Business Society",
             "title": "VP Technology",
-            "start": "Aug 2021",
-            "end": "Dec 2022",
+            "interval": ["2021-08-01", "2022-12-01"],
             "location": "Durham, NC",
             "description": [
                 "Designed S&amp;C's website and created content to inform prospective members and guest speakers using a website builder, utilized a clean and modern design."
