@@ -1,33 +1,19 @@
-import { Link } from "react-router-dom"
-import LogoGreen from "../assets/LogoGreen.png"
+import Logo from "./Logo";
+import NavbarItem from "./NavbarItem";
 
-const Navbar = () => {
+function Navbar() {
     return (
         <header>
             <div className="navbar">
                 <span className="left">
-                    <Link to="/">
-                        <img src={LogoGreen} alt="Green Logo of ZRW Initials" height="12px"/>
-                        <p className="navbar-title">Zsofia Walter</p>
-                    </Link>
+                    <Logo />
                 </span>
                 <span className="right">
-                    <Link to="/cv">
-                        <p className="navbar-item">CV</p>
-                    </Link>
-                    <Link to="/projects">
-                        <p className="navbar-item">Projects</p>
-                    </Link>
-                    <Link to="/art">
-                        <p className="navbar-item">Art</p>
-                    </Link>
-                    <Link to="/travel">
-                        <p className="navbar-item">Travel</p>
-                    </Link>
+                    <NavbarItem name="CV" ext="cv" />
                 </span>
             </div>
         </header>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
