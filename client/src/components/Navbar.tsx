@@ -1,17 +1,19 @@
-import { Link } from "react-router-dom"
+import Logo from "./Logo";
+import NavbarItem from "./NavbarItem";
 
-const Navbar = () => {
+function Navbar() {
     return (
         <header>
-            <div className="container">
-                <Link to="/">
-                    <h1>
-                        Home
-                    </h1>
-                </Link>
+            <div className="navbar">
+                <span className="left">
+                    <Logo />
+                </span>
+                <span className="right">
+                    <NavbarItem name="CV" ext="cv" />
+                </span>
             </div>
         </header>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

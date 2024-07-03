@@ -1,11 +1,9 @@
 const Home = () => {
-    return(
-        <div className="home">
-            <h2>
-                Home
-            </h2>
+    return (
+        <div className="page">
+            <h2>Welcome!</h2>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

@@ -1,9 +1,10 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import pages and components
-import Home from "./pages/Home"
-import Navbar from './components/Navbar';
+import Home from "./pages/Home";
+import CV from "./pages/CV";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -11,10 +12,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={<Home />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<CV />} />
         </Routes>
       </BrowserRouter>
     </div>
