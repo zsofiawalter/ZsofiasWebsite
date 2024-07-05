@@ -3,7 +3,7 @@
     "general": {
         "citizenship": ["United States of America", "Hungary"],
         "education": {
-            "degree": ["B.Sc. Computer Science", "B.Sc. Mathematics"],
+            "degrees": ["B.Sc. Computer Science", "B.Sc. Mathematics"],
             "school": "Duke University",
             "interval": ["2019-08-01", "2023-05-01"]
         },
@@ -12,12 +12,12 @@
             { "language": "Hungarian", "level": "fluent" },
             { "language": "German", "level": "B2" }
         ],
-        "contact": {
-            "linkedin": "linkedin.in/zsofiawalter",
-            "germanNumber": "+49152",
-            "usNumber": "17572324554",
-            "github": "github.com"
-        }
+        "contact": [
+            "linkedin.com/in/zsofia-walter",
+            "github.com/zsofiawalter",
+            "+49 152 07512887",
+            "1 (757) 232- 4554"
+        ]
     },
     "experiences": [
         {
@@ -122,12 +122,12 @@
         },
         {
             "type": "Leadership",
-            "name": "Scale &amp; Coin Business Society",
+            "name": "Scale & Coin Business Society",
             "title": "VP Technology",
             "interval": ["2021-08-01", "2022-12-01"],
             "location": "Durham, NC",
             "description": [
-                "Designed S&amp;C's website and created content to inform prospective members and guest speakers using a website builder, utilized a clean and modern design."
+                "Designed S&C's website and created content to inform prospective members and guest speakers using a website builder, utilized a clean and modern design."
             ],
             "skills": ["Communication", "Web Design", "Mentorship"]
         }

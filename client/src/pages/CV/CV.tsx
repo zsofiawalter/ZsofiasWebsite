@@ -1,6 +1,6 @@
 import List from "../../components/List";
 import Experience from "./Experience";
-import getExperiences from "./getData";
+import { getExperiences } from "./getData";
 
 function CV() {
     let fakeContent = ["item1", "item2"];

@@ -1,39 +1,35 @@
 import cvJson from "../../assets/cv.json";
-import { IExperience } from "./IExperience";
+import { IExperience, ILanguage } from "./ICvData";
 
 /**
- * Returns date in format to be use in CV
- * @param s string in form to be converted to date
- * @returns string of month and year of date
+ * Returns list of Dates converted directly from param list of strings
+ * @param stringInterval string[] to be converted to date[]
+ * @returns Date[] converted from stringInterval
  */
-function formatDate(s: string) {
-    if (typeof s == "string") {
-        let dateList = new Date(s).toDateString().split(" ");
-        let month = dateList[1];
-        let year = dateList[3];
-        return month + " " + year;
-    } else {
-        return "";
+function stringsToDates(stringInterval: string[]): Date[] {
+    let dateInterval: Date[] = [];
+    for (let s of stringInterval) {
+        let d = new Date(s);
+        dateInterval.push(d);
     }
+    return dateInterval;
 }
 
-// TODO: consider passing date into IExperience and formatting date into string later
-
 /**
- * Reads in entries from JSON file and adds them to list
+ * Reads in experience entries from JSON file and returns them in list
  * @returns IExperience list of work experiences in cv.json
  */
-function getExperiences() {
+function getExperiences(): IExperience[] {
     let experiencesJson = cvJson.experiences;
     let experiencesList: IExperience[] = [];
     for (let e of experiencesJson) {
+        let interval = stringsToDates(e.interval);
         let storeExp: IExperience = {
             Type: e.type,
             Name: e.name,
             Team: e.team,
             Title: e.title,
-            Start: formatDate(e.interval[0]),
-            End: formatDate(e.interval[1]),
+            Interval: interval,
             Location: e.location,
             Description: e.description,
             Skills: e.skills,
@@ -43,4 +39,39 @@ function getExperiences() {
     return experiencesList;
 }
 
-export default getExperiences;
+/**
+ * Reads in citizenship entries from JSON file and returns them in list
+ * @returns string[] of citizenships listed in CV
+ */
+function getCitizenship(): string[] {
+    let citizenships: string[] = cvJson.general.citizenship;
+    return citizenships;
+}
+
+/**
+ * Reads in language entries from JSON file and returns them in list
+ * @returns ILanguage[] of languages listed in CV
+ */
+function getLanguage(): ILanguage[] {
+    let languagesJson = cvJson.general.languages;
+    let languagesList: ILanguage[] = [];
+    for (let l of languagesJson) {
+        let storeLanguage: ILanguage = {
+            Language: l.language,
+            Level: l.level,
+        };
+        languagesList.push(storeLanguage);
+    }
+    return languagesList;
+}
+
+/**
+ * Reads in contact entries from JSON file and returns them in list
+ * @returns string[] of contact types listed in CV
+ */
+function getContact(): string[] {
+    let contact: string[] = cvJson.general.contact;
+    return contact;
+}
+
+export { getExperiences };
