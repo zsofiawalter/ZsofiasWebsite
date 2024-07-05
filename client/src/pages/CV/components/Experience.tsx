@@ -10,13 +10,21 @@ import { formatInterval } from "../util/formatCvData";
 function Experience({ experience }: { experience: IExperience }) {
     return (
         <div className={"experience " + experience.Type}>
-            <p className="name">{experience.Name}</p>
-            {experience.Team && <p className="team"> {experience.Team} </p>}
-            <p className="title">{experience.Title}</p>
-            <p className="interval">{formatInterval(experience.Interval)}</p>
-            <p className="location">{experience.Location}</p>
-            <List content={experience.Description} />
-            <List content={experience.Skills} header="Skills:" />
+            <div className="header">
+                <p className="name">{experience.Name}</p>
+                {experience.Team && <p className="team"> {experience.Team} </p>}
+                <p className="title">{experience.Title}</p>
+                <p className="interval">
+                    {formatInterval(experience.Interval)}
+                </p>
+                <p className="location">{experience.Location}</p>
+            </div>
+            <List content={experience.Description} addtlClass="description" />
+            <List
+                content={experience.Skills}
+                header="Skills:"
+                addtlClass="skills"
+            />
         </div>
     );
 }

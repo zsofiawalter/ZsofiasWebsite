@@ -4,8 +4,9 @@
   color: #014421;
 } 
 
-.pages {
-  margin: 0 auto;
+.page {
+  margin: 300px auto;
+  text-align: center;
 }
 
 /* Navbar formatting */
@@ -48,7 +49,28 @@ header a {
   background-color: #014421;
 }
 
-.page {
-  text-align: center;
-  margin-top: 300px;
+/* Component formatting */
+.list.ul {
+  display: flex;
+}
+
+/* CV formatting */
+.general{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.description li {
+  text-align: left;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.experience .header {
+  display: flex;
+  justify-content: space-between;
 }
