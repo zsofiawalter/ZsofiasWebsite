@@ -1,0 +1,93 @@
+/* APP */
+* { 
+  font-family: "Andale Mono", monospace;
+  color: #014421;
+  cursor: cell;
+} 
+
+.page {
+  margin: 300px auto;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  margin: 0 auto;
+  top: 16px;
+  width: 100%;
+}
+
+.left {
+  position: fixed;
+  left: 32px;
+}
+
+.right {
+  position: fixed;
+  right: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  display: inline;
+  padding-left: 8px;
+}
+
+header a {
+  color: #014421;
+  text-decoration: none;
+}
+
+.navbar-item {
+  padding: 0px 8px 0px 8px;
+  margin: 0px 4px 0px 4px;
+}
+
+.navbar-item:hover {
+  color: white;
+  background-color: #014421;
+}
+
+/* COMPONENTS */
+
+/* List */
+.list ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list li:before {
+  content: "+";
+  padding-right: 8px;
+}
+
+.list.nobullet li:before {
+  content: "";
+  padding-right: 0px;
+}
+
+/* CV */
+
+/* General  */
+.general{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+/* Experiences */
+.experience .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description li {
+  text-align: left;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-evenly;
+}
