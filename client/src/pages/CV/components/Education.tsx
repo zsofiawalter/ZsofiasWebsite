@@ -1,6 +1,6 @@
-import { getEducation } from "./getCvData";
-import { formatInterval } from "./formatCvData";
-import List from "../../components/List";
+import { getEducation } from "../util/getCvData";
+import { formatInterval } from "../util/formatCvData";
+import List from "../../../components/List";
 
 function Education() {
     let education = getEducation();

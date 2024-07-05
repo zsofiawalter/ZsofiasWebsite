@@ -1,7 +1,7 @@
 import List from "../../components/List";
-import Experience from "./Experience";
-import General from "./General";
-import { getExperiences } from "./getCvData";
+import Experience from "./components/Experience";
+import General from "./components/General";
+import { getExperiences } from "./util/getCvData";
 import { IExperience } from "./ICvData";
 
 function CV() {

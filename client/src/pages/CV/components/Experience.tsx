@@ -1,6 +1,6 @@
-import List from "../../components/List";
-import { IExperience } from "./ICvData";
-import { formatInterval } from "./formatCvData";
+import List from "../../../components/List";
+import { IExperience } from "../ICvData";
+import { formatInterval } from "../util/formatCvData";
 
 /**
  * Returns experience component

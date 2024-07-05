@@ -1,7 +1,7 @@
 import Education from "./Education";
-import List from "../../components/List";
-import { getCitizenship, getContact, getLanguages } from "./getCvData";
-import { formatLanguages } from "./formatCvData";
+import List from "../../../components/List";
+import { getCitizenship, getContact, getLanguages } from "../util/getCvData";
+import { formatLanguages } from "../util/formatCvData";
 
 function General() {
     let citizenship = getCitizenship();

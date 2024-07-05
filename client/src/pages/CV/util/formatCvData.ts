@@ -1,5 +1,5 @@
 // TODO: Consider splitting this up into multiple files?
-import { ILanguage } from "./ICvData";
+import { ILanguage } from "../ICvData";
 
 /**
  * Returns date in format to be use in CV

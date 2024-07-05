@@ -1,5 +1,5 @@
-import cvJson from "../../assets/cv.json";
-import { IEducation, IExperience, ILanguage } from "./ICvData";
+import cvJson from "../../../assets/cv.json";
+import { IEducation, IExperience, ILanguage } from "../ICvData";
 
 // TODO: potentially move this to a util folder?
 /**
