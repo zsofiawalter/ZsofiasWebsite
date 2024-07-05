@@ -1,7 +1,8 @@
-/* General Formatting */
+/* APP */
 * { 
   font-family: "Andale Mono", monospace;
   color: #014421;
+  cursor: cell;
 } 
 
 .page {
@@ -9,7 +10,7 @@
   text-align: center;
 }
 
-/* Navbar formatting */
+/* NAVBAR */
 .navbar {
   position: fixed;
   margin: 0 auto;
@@ -49,16 +50,37 @@ header a {
   background-color: #014421;
 }
 
-/* Component formatting */
-.list.ul {
-  display: flex;
+/* COMPONENTS */
+
+/* List */
+.list ul {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
-/* CV formatting */
+.list li:before {
+  content: "+";
+  padding-right: 8px;
+}
+
+.list.nobullet li:before {
+  content: "";
+  padding-right: 0px;
+}
+
+/* CV */
+
+/* General  */
 .general{
   display: flex;
   justify-content: space-evenly;
   
+}
+
+/* Experiences */
+.experience .header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .description li {
@@ -68,9 +90,4 @@ header a {
 .skills ul {
   display: flex;
   justify-content: space-evenly;
-}
-
-.experience .header {
-  display: flex;
-  justify-content: space-between;
 }

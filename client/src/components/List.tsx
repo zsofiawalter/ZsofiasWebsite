@@ -16,7 +16,7 @@ function List({
     let listHeader = <h4>{header}</h4>;
     let listItems = content.map((text) => <li>{text}</li>);
     return (
-        <div className={"list " + addtlClass && addtlClass}>
+        <div className={"list " + (addtlClass && addtlClass)}>
             {header && listHeader}
             <ul>{listItems}</ul>
         </div>

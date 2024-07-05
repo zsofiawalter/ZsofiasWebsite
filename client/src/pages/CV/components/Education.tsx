@@ -8,7 +8,7 @@ function Education() {
     return (
         <div className="education">
             <h4>Education</h4>
-            <List content={education.Degrees} addtlClass="degrees" />
+            <List content={education.Degrees} addtlClass="degrees nobullet" />
             <p className="school">{education.School}</p>
             <p className="interval">{interval}</p>
         </div>

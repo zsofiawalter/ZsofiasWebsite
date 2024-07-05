@@ -12,14 +12,18 @@ function General() {
             <List
                 content={citizenship}
                 header={"Citizenships"}
-                addtlClass="citizenship"
+                addtlClass="citizenship nobullet"
             />
             <Education />
-            <List content={contact} header={"Contact"} addtlClass="contact" />
+            <List
+                content={contact}
+                header={"Contact"}
+                addtlClass="contact nobullet"
+            />
             <List
                 content={languages}
                 header={"Languages"}
-                addtlClass="languages"
+                addtlClass="languages nobullet"
             />
         </div>
     );
