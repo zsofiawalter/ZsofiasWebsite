@@ -1,5 +1,6 @@
 import List from "../../components/List";
 import { IExperience } from "./ICvData";
+import { formatInterval } from "./formatCvData";
 
 /**
  * Returns experience component
@@ -12,9 +13,7 @@ function Experience({ experience }: { experience: IExperience }) {
             <p className="name">{experience.Name}</p>
             {experience.Team && <p className="team"> {experience.Team} </p>}
             <p className="title">{experience.Title}</p>
-            <p className="interval">
-                {experience.Start + "-" + experience.End}
-            </p>
+            <p className="interval">{formatInterval(experience.Interval)}</p>
             <p className="location">{experience.Location}</p>
             <List content={experience.Description} />
             <List content={experience.Skills} header="Skills:" />

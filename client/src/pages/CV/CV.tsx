@@ -1,6 +1,8 @@
 import List from "../../components/List";
 import Experience from "./Experience";
-import { getExperiences } from "./getData";
+import General from "./General";
+import { getExperiences } from "./getCvData";
+import { IExperience } from "./ICvData";
 
 function CV() {
     let fakeContent = ["item1", "item2"];
@@ -15,9 +17,7 @@ function CV() {
     return (
         <div className="page">
             <h2>This is my CV.</h2>
-            <div className="general">
-                <List content={fakeContent} header={fakeHeader} />
-            </div>
+            <General />
             <div className="experiences">
                 <h3>Experiences</h3>
                 {experiencesJSX}
