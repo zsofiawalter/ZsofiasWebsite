@@ -1,12 +1,17 @@
 import { IExperience } from "../ICvData";
 import { getExperiences } from "../util/getCvData";
 import Experience from "./Experience";
-import Section from "./Section";
+import Section from "../../../components/Section";
 
 function experienceToJSX(exp: IExperience) {
   return <Experience experience={exp} key={exp.ID} />;
 }
 
+/**
+ * Retrieves data for experiences
+ * Returns projects, work and leadership sections with corresponding experiences
+ * @returns three sections, projects, work and leadership with list of experiences
+ */
 function Experiences() {
   // Get experiences data as IExperience[]
   let experiencesList = getExperiences();
@@ -22,11 +27,11 @@ function Experiences() {
   let leadershipJSX = leadership.map(experienceToJSX);
 
   return (
-    <section className="experiences">
+    <Section addtlClass="experiences">
       <Section title="Projects">{projectsJSX}</Section>
       <Section title="Work">{workJSX}</Section>
       <Section title="Leadership">{leadershipJSX}</Section>
-    </section>
+    </Section>
   );
 }
 
