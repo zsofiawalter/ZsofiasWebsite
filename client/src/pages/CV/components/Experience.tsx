@@ -1,32 +1,34 @@
 import List from "../../../components/List";
-import { IExperience } from "../ICvData";
-import { formatInterval } from "../util/formatCvData";
+import { IExperience } from "../types/IExperience";
+import { formatInterval } from "../util/formatInterval";
 
 /**
+ * Must pass IExperience object to the function
  * Returns experience component
- * @param experience of type IExperience containing data for one experience
+ * @param {IExperience} experience containing data for one experience
  * @returns div block with experience information structured
  */
 function Experience({ experience }: { experience: IExperience }) {
-    return (
-        <div className={"experience " + experience.Type}>
-            <div className="header">
-                <p className="name">{experience.Name}</p>
-                {experience.Team && <p className="team"> {experience.Team} </p>}
-                <p className="title">{experience.Title}</p>
-                <p className="interval">
-                    {formatInterval(experience.Interval)}
-                </p>
-                <p className="location">{experience.Location}</p>
-            </div>
-            <List content={experience.Description} addtlClass="description" />
-            <List
-                content={experience.Skills}
-                header="Skills:"
-                addtlClass="skills"
-            />
-        </div>
-    );
+  let name = experience.Name;
+  let team = experience.Team;
+  let title = experience.Title;
+  let interval = formatInterval(experience.Interval);
+  let location = experience.Location;
+  let description = experience.Description;
+  let skills = experience.Skills;
+
+  return (
+    <div className={"experience"}>
+      <div className="header">
+        <p className="name">{name + (team ? ", " + team : "")}</p>
+        <p className="title">{title}</p>
+        <p className="interval">{interval}</p>
+        <p className="location">{location}</p>
+      </div>
+      <List content={description} addtlClass="description" />
+      <List content={skills} header="Skills:" addtlClass="skills" />
+    </div>
+  );
 }
 
 export default Experience;
