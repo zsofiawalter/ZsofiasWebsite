@@ -1,7 +1,6 @@
 import { getEducation } from "../util/getCvData";
 import { formatInterval } from "../util/formatCvData";
 import List from "../../../components/List";
-import { IEducation } from "../ICvData";
 
 /**
  * Must pass IEducation object to the function
@@ -11,12 +10,16 @@ import { IEducation } from "../ICvData";
  */
 function Education() {
   let education = getEducation();
+
+  let school = education.School;
+  let degrees = education.Degrees;
   let interval = formatInterval(education.Interval);
+
   return (
     <div className="education">
       <h4>Education</h4>
-      <List content={education.Degrees} addtlClass="degrees nobullet" />
-      <p className="school">{education.School}</p>
+      <p className="school">{school}</p>
+      <List content={degrees} addtlClass="degrees nobullet" />
       <p className="interval">{interval}</p>
     </div>
   );
