@@ -1,6 +1,8 @@
 import { experiences } from "../../../data/experiences";
 import { general } from "../../../data/general";
-import { IEducation, IExperience, ILanguage } from "../ICvData";
+import { IExperience } from "../types/IExperience";
+import { ILanguage } from "../types/ILanguage";
+import { IEducation } from "../types/IEducation";
 
 // TODO: potentially move this to a util folder?
 /**
@@ -79,7 +81,7 @@ function getLanguages(): ILanguage[] {
     let languagesList: ILanguage[] = [];
     for (let l of languagesJson) {
         let newLanguage: ILanguage = {
-            Language: l.language,
+            Name: l.language,
             Level: l.level,
         };
         languagesList.push(newLanguage);

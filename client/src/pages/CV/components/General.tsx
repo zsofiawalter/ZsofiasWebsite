@@ -5,17 +5,19 @@ import { formatLanguages } from "../util/formatCvData";
 import Section from "../../../components/Section";
 
 /**
- * Returns
- * @returns
+ * Retrieves general data from data folder
+ * Returns general section with citizenships, education, contact info, languages
+ * @returns general section with citizenships, education, contact info, languages
  */
 function General() {
-  // Get general data as string[] and ILanguage[]
+  // Get general data as string[] and Language[]
   let citizenship = getCitizenship();
   let contact = getContact();
   let languages = getLanguages();
 
-  // Convert ILanguage[] to string[]
+  // Convert Language[] to string[]
   let stringLanguages = formatLanguages(languages);
+
   return (
     <Section addtlClass="general">
       <List

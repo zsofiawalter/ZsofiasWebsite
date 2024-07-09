@@ -3,14 +3,15 @@ import { formatInterval } from "../util/formatCvData";
 import List from "../../../components/List";
 
 /**
- * Must pass IEducation object to the function
+ * Retrieves education data
  * Returns education div with title, degree, school and interval
- * @param {IEducation} education object containing data for one experience
- * @returns div block with experience information structured
+ * @returns div block with schol, degrees and interval for education
  */
 function Education() {
+  // Get education data as IEducation
   let education = getEducation();
 
+  // Convert from IEducation to strings
   let school = education.School;
   let degrees = education.Degrees;
   let interval = formatInterval(education.Interval);

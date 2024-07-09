@@ -1,5 +1,5 @@
 // TODO: Consider splitting this up into multiple files?
-import { ILanguage } from "../ICvData";
+import { ILanguage } from "../types/ILanguage";
 
 /**
  * Returns date in format to be use in CV
@@ -32,7 +32,7 @@ function formatInterval(dateList: Date[]): string {
  * @returns string in format "LANGUAGE, LEVEL"
  */
 function formatLanguage(language: ILanguage): string {
-    let formattedLanguage = language.Language + ", " + language.Level;
+    let formattedLanguage = language.Name + ", " + language.Level;
     return formattedLanguage;
 }
 
