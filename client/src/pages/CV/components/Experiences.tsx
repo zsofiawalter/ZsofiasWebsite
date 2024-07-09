@@ -1,7 +1,6 @@
 import { IExperience } from "../types/IExperience";
 import { getExperiences } from "../lib/getCvData";
 import Experience from "./Experience";
-import Section from "../../../components/Section";
 
 function experienceToJSX(exp: IExperience) {
   return <Experience experience={exp} key={exp.ID} />;
@@ -27,11 +26,20 @@ function Experiences() {
   let leadershipJSX = leadership.map(experienceToJSX);
 
   return (
-    <Section addtlClass="experiences">
-      <Section title="Projects">{projectsJSX}</Section>
-      <Section title="Work">{workJSX}</Section>
-      <Section title="Leadership">{leadershipJSX}</Section>
-    </Section>
+    <div className="experiences">
+      <section className="projects">
+        <h3>Projects</h3>
+        {projectsJSX}
+      </section>
+      <section className="work">
+        <h3>Work Experience</h3>
+        {workJSX}
+      </section>
+      <section className="Leadership">
+        <h3>Leadership Experience</h3>
+        {leadershipJSX}
+      </section>
+    </div>
   );
 }
 

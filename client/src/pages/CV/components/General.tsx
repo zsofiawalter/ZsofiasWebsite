@@ -2,7 +2,6 @@ import Education from "./Education";
 import List from "../../../components/List";
 import { getCitizenship, getContact, getLanguages } from "../lib/getCvData";
 import { formatLanguages } from "../util/formatLanguage";
-import Section from "../../../components/Section";
 
 /**
  * Retrieves general data from data folder
@@ -19,7 +18,7 @@ function General() {
   let stringLanguages = formatLanguages(languages);
 
   return (
-    <Section addtlClass="general">
+    <div className="general">
       <List
         content={citizenship}
         header={"Citizenships"}
@@ -36,7 +35,7 @@ function General() {
         header={"Languages"}
         addtlClass="languages nobullet"
       />
-    </Section>
+    </div>
   );
 }
 
