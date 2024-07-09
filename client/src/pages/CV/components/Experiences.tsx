@@ -1,5 +1,5 @@
 import { IExperience } from "../types/IExperience";
-import { getExperiences } from "../util/getCvData";
+import { getExperiences } from "../lib/getCvData";
 import Experience from "./Experience";
 import Section from "../../../components/Section";
 

@@ -1,4 +1,4 @@
-import { getEducation } from "../util/getCvData";
+import { getEducation } from "../lib/getCvData";
 import { formatInterval } from "../util/formatCvData";
 import List from "../../../components/List";
 

@@ -4,7 +4,6 @@ import { IExperience } from "../types/IExperience";
 import { ILanguage } from "../types/ILanguage";
 import { IEducation } from "../types/IEducation";
 
-// TODO: potentially move this to a util folder?
 /**
  * Returns list of Dates converted directly from param list of strings
  * @param stringInterval string[] to be converted to date[]

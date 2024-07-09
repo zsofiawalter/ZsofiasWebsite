@@ -1,6 +1,6 @@
 import Education from "./Education";
 import List from "../../../components/List";
-import { getCitizenship, getContact, getLanguages } from "../util/getCvData";
+import { getCitizenship, getContact, getLanguages } from "../lib/getCvData";
 import { formatLanguages } from "../util/formatCvData";
 import Section from "../../../components/Section";
 
