@@ -3,8 +3,9 @@ import { IExperience } from "../ICvData";
 import { formatInterval } from "../util/formatCvData";
 
 /**
+ * Must pass IExperience object to the function
  * Returns experience component
- * @param experience of type IExperience containing data for one experience
+ * @param {IExperience} experience of type IExperience containing data for one experience
  * @returns div block with experience information structured
  */
 function Experience({ experience }: { experience: IExperience }) {
