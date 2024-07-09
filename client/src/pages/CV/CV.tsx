@@ -1,4 +1,4 @@
-import Experiences from "./components/Experiences";
+import ExperienceSection from "./components/ExperienceSection";
 import General from "./components/General";
 
 function CV() {
@@ -6,7 +6,9 @@ function CV() {
     <div className="page">
       <h2>This is my CV.</h2>
       <General />
-      <Experiences />
+      <ExperienceSection type="work" header="Work Experience" />
+      <ExperienceSection type="projects" header="Projects" />
+      <ExperienceSection type="leadership" header="Leadership Experience" />
     </div>
   );
 }
