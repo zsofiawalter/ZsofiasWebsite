@@ -10,7 +10,7 @@ function Navbar() {
         </span>
         <span className="right">
           <NavbarItem name="CV" ext="cv" />
-          <NavbarItem name="Travel" ext="travels" />
+          <NavbarItem name="Travels" ext="travels" />
         </span>
       </nav>
     </header>
