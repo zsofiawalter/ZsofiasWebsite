@@ -20,8 +20,7 @@ function Experience({ experience }: { experience: IExperience }) {
   return (
     <div className={"experience"}>
       <div className="header">
-        <p className="name">{name}</p>
-        {team && <p className="team"> {team} </p>}
+        <p className="name">{name + (team ? ", " + team : "")}</p>
         <p className="title">{title}</p>
         <p className="interval">{interval}</p>
         <p className="location">{location}</p>

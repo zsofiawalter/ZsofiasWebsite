@@ -27,13 +27,13 @@ function Experiences() {
 
   return (
     <div className="experiences">
-      <section className="projects">
-        <h3>Projects</h3>
-        {projectsJSX}
-      </section>
       <section className="work">
         <h3>Work Experience</h3>
         {workJSX}
+      </section>
+      <section className="projects">
+        <h3>Projects</h3>
+        {projectsJSX}
       </section>
       <section className="Leadership">
         <h3>Leadership Experience</h3>
