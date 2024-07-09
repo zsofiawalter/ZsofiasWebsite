@@ -1,6 +1,6 @@
 import List from "../../../components/List";
 import { IExperience } from "../types/IExperience";
-import { formatInterval } from "../util/formatCvData";
+import { formatInterval } from "../util/formatInterval";
 
 /**
  * Must pass IExperience object to the function
