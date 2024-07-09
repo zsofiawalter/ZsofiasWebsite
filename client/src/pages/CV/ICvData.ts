@@ -1,6 +1,7 @@
 // TODO: Consider splitting this up into multiple files?
 
 export interface IExperience {
+    ID: number;
     Type: string;
     Name: string;
     Team?: string;

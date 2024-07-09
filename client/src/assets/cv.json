@@ -21,6 +21,7 @@
     },
     "experiences": [
         {
+            "id": 0,
             "type": "work",
             "name": "PowerUs",
             "team": "Job Matching",
@@ -42,6 +43,7 @@
             ]
         },
         {
+            "id": 1,
             "type": "work",
             "name": "Microsoft",
             "team": "Word Online",
@@ -56,6 +58,7 @@
             "skills": ["TypeScript", "GitHub"]
         },
         {
+            "id": 2,
             "type": "work",
             "name": "Microsoft",
             "team": "Bing Index Spam Detection",
@@ -69,6 +72,7 @@
             "skills": ["SQL", "C#"]
         },
         {
+            "id": 3,
             "type": "project",
             "name": "Thrifty Carrot",
             "title": "Project Lead",
@@ -90,6 +94,7 @@
             ]
         },
         {
+            "id": 4,
             "type": "project",
             "name": "DigiDJ",
             "title": "Project Lead",
@@ -108,6 +113,7 @@
             ]
         },
         {
+            "id": 5,
             "type": "leadership",
             "name": "Duke Varsity Fencing Team",
             "title": "Women's Team Captain",
@@ -121,6 +127,7 @@
             "skills": ["Leadership", "Communication", "Teamwork", "Mentorship"]
         },
         {
+            "id": 6,
             "type": "Leadership",
             "name": "Scale & Coin Business Society",
             "title": "VP Technology",

@@ -55,6 +55,7 @@ function getExperiences(): IExperience[] {
     for (let e of experiencesJson) {
         let interval = stringListToDateList(e.interval);
         let newExperience: IExperience = {
+            ID: e.id,
             Type: e.type,
             Name: e.name,
             Team: e.team,
