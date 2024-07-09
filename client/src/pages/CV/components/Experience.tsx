@@ -9,7 +9,7 @@ import { formatInterval } from "../util/formatCvData";
  */
 function Experience({ experience }: { experience: IExperience }) {
   return (
-    <div className={"experience " + experience.Type} key={experience.ID}>
+    <div className={"experience " + experience.Type}>
       <div className="header">
         <p className="name">{experience.Name}</p>
         {experience.Team && <p className="team"> {experience.Team} </p>}

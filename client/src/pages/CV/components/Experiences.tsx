@@ -3,7 +3,7 @@ import { getExperiences } from "../util/getCvData";
 import Experience from "./Experience";
 
 function experienceToJSX(exp: IExperience) {
-  return <Experience experience={exp} />;
+  return <Experience experience={exp} key={exp.ID} />;
 }
 
 function Experiences() {

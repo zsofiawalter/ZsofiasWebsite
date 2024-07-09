@@ -1,4 +1,5 @@
-import cvJson from "../../../assets/cv.json";
+import { experiences } from "../../../data/experiences";
+import { general } from "../../../data/general";
 import { IEducation, IExperience, ILanguage } from "../ICvData";
 
 // TODO: potentially move this to a util folder?
@@ -17,7 +18,7 @@ function stringListToDateList(stringInterval: string[]): Date[] {
  * @returns string[] of citizenships listed in CV
  */
 function getCitizenship(): string[] {
-    let citizenships: string[] = cvJson.general.citizenship;
+    let citizenships: string[] = general.citizenship;
     return citizenships;
 }
 
@@ -26,7 +27,7 @@ function getCitizenship(): string[] {
  * @returns string[] of contact types listed in CV
  */
 function getContact(): string[] {
-    let contact: string[] = cvJson.general.contact;
+    let contact: string[] = general.contact;
     return contact;
 }
 
@@ -35,7 +36,7 @@ function getContact(): string[] {
  * @returns IEducation of education stored in cv.json
  */
 function getEducation(): IEducation {
-    let educationJson = cvJson.general.education;
+    let educationJson = general.education;
     let interval = stringListToDateList(educationJson.interval);
     let newEducation: IEducation = {
         Degrees: educationJson.degrees,
@@ -50,9 +51,8 @@ function getEducation(): IEducation {
  * @returns IExperience list of work experiences in cv.json
  */
 function getExperiences(): IExperience[] {
-    let experiencesJson = cvJson.experiences;
     let experiencesList: IExperience[] = [];
-    for (let e of experiencesJson) {
+    for (let e of experiences) {
         let interval = stringListToDateList(e.interval);
         let newExperience: IExperience = {
             ID: e.id,
@@ -75,7 +75,7 @@ function getExperiences(): IExperience[] {
  * @returns ILanguage[] of languages listed in CV
  */
 function getLanguages(): ILanguage[] {
-    let languagesJson = cvJson.general.languages;
+    let languagesJson = general.languages;
     let languagesList: ILanguage[] = [];
     for (let l of languagesJson) {
         let newLanguage: ILanguage = {
