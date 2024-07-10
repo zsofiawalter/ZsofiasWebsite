@@ -25,7 +25,7 @@ function LocationInputForm() {
       />
       <input
         type="number"
-        placeholder="lat"
+        placeholder="latitude"
         value={latitude}
         onChange={(e) => setLatitude(Number(e.target.value))}
         step={numInputStep}
@@ -35,7 +35,7 @@ function LocationInputForm() {
       />
       <input
         type="number"
-        placeholder="long"
+        placeholder="longitude"
         value={longitude}
         onChange={(e) => setLongitude(Number(e.target.value))}
         step={numInputStep}

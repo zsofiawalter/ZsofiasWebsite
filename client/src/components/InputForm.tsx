@@ -12,7 +12,7 @@ function InputForm({
   submitLabel = "Submit",
 }: InputFormProps) {
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="input-form">
       {header && <h4>{header}</h4>}
       {children}
       <button type="submit">{submitLabel}</button>
