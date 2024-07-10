@@ -1,5 +1,8 @@
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 
+/**
+ * @returns leaflet map centered on Berlin
+ */
 function Map() {
   return (
     <MapContainer center={[52.52, 13.405]} zoom={10} scrollWheelZoom={false}>
