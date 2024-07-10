@@ -91,3 +91,11 @@ header a {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* TRAVELS */
+
+.leaflet-container{
+  height: 360px;
+  width: 75%;
+  margin: auto;
+}
